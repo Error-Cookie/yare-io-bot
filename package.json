@@ -1,0 +1,36 @@
+{
+  "name": "yare-io-bot",
+  "version": "0.1.0",
+  "description": "My bot for yare.io",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "build": "node esbuild",
+    "upload": "node esbuild -s"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Error-Cookie/yare-io-bot/"
+  },
+  "keywords": [
+    "yare",
+    "io",
+    "yareio",
+    "javascript",
+    "js",
+    "ErrorCookie"
+  ],
+  "author": "ErrorCookie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Error-Cookie/yare-io-bot/issues"
+  },
+  "homepage": "https://github.com/Error-Cookie/yare-io-bot#readme",
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "esbuild": "^0.12.15",
+    "node-watch": "^0.7.1",
+    "typescript": "^4.3.5",
+    "yare-sync": "1.0.1",
+    "yarn": "^1.22.10"
+  }
+}
