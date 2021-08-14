@@ -88,7 +88,6 @@
                 if (isSamePos(pos, spirit.pos)) {
                     if (spirit.baseNearby) spirit.energize(base);
                     else if (spirit.starNearby) {
-                        // TODO - Toggle charge/transfer
                         if (i % 4 == 3) (this.squad[0].mark == 'charge') ? spirit.mark = 'transfer' : spirit.mark = 'charge';
                         else if (spirit.isFull) spirit.mark = 'transfer';
                         else if (spirit.energy == 0) spirit.mark = 'charge';
