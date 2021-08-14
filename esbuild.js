@@ -21,15 +21,14 @@ const shouldwatch = flags.includes("-w") || flags.includes("--watch");
 const shouldsync = flags.includes("-s") || flags.includes("--sync");
 const switchacc = flags.includes("-a") || flags.includes("--switch-acc");
 
-const usingts = fs.existsSync(path.join(__dirname, "src/main.ts"));
 const usingjs = fs.existsSync(path.join(__dirname, "src/main.js"));
 
-if (!usingjs && !usingts) {
+if (!usingjs) {
   console.log("You don't have a main file smh");
   process.exit(0);
 }
 
-let mainfile = usingjs ? "src/main.js" : "src/main.ts";
+let mainfile = "src/main.js";
 
 const esbuildConfig = {
   entryPoints: [mainfile],
